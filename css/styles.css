@@ -23,7 +23,6 @@ img{
 
 
 
-
 :root {
         --main-bg-color: #FFFFFF;
         --footer-bg-color: #2F303A;
@@ -31,7 +30,7 @@ img{
         --title-color: #212121;
         --main-text-color: #757575;
         --hero-heading-color: #FFFFFF;
-        --hero-bg-color: #2F303A;
+        --hero-bg-color: #C4C4C4;
         --hero-button-bg: #188CE8;
         --team-bg: #F5F4FA;
         --section-team-bg: #FFFFFF;
@@ -105,6 +104,9 @@ padding-bottom: 25px; */
     padding-bottom: 60px;
     padding-top: 60px;
     padding-left: 0;
+    display: flex;
+    
+    
     
 }
 /* ---------------------------footer-logo---------------------- */
@@ -154,8 +156,10 @@ padding-bottom: 25px; */
     letter-spacing: 0.03em;
 
     margin-bottom: 9px;
+    display: block;
     
 }
+
 .address .address-map:not(:last-child){
     margin-bottom: 9px;
 }
@@ -167,7 +171,52 @@ padding-bottom: 25px; */
     color: var(--active-color);
     text-decoration: none;
 }
+.footer-link-word{
+    color: #FFFFFF;
+    font-style:normal;
 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 20px;
+}
+.footer-soc-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-radius: 50%;
+    
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+.footer-net{
+    fill: #FFFFFF;
+}
+
+.footer-link-item+.footer-link-item {
+    margin-left: 10px;
+}
+
+.footer-links {
+    display: flex;
+    
+}
+
+
+
+.footer-soc-link:hover{
+    background-color: var(--active-color) ;
+}
+.networks-footer,
+.address-links {
+    display: inline-block;
+}
+.address-links{
+    margin-right: 70px;
+}
 
 /* --------------------------header main navigation -----------------*/
 .header{
@@ -263,6 +312,14 @@ margin-right: 50px;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
+    url(../images/heroBG-pic.jpg);
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    /* background-position: center; */
+    margin-left: auto;
+    margin-right: auto;
     
     
 }
@@ -413,9 +470,30 @@ margin-right: 50px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-
+    margin-bottom: 16px;
     
 }
+.team-net{
+    fill: #AFB1B8;
+}
+.team-net-links{
+    display: flex;
+    justify-content: center;
+}
+.team-links{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-radius: 50%;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+}
+.team-link-items+ .team-link-items{
+    margin-left: 10px;
+}
+
+
 /*------------------------- Portfolio page ------------*/
 
 .section{
