@@ -535,7 +535,7 @@ fill: var(--active-color);
 /* ---------------------our team------------------- */
 .section.team{
     background-color:var(--team-bg);
-    
+    padding-bottom: 94px;
 }
 
 .our-team-pic{
@@ -576,6 +576,7 @@ fill: var(--active-color);
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: #fff;
+    
 }
 .box-text{
     padding-top: 30px;
@@ -662,16 +663,18 @@ align-items: center;
     height: 92px;
 }
 .clients-a .client-button:hover,
-.clients-a .client-button:focus {
+.clients-list .clients-a:focus
+{
     border-color:#2196F3;
     cursor: pointer;
     /* fill: currentColor; */
-    fill: #2196F3;
+    /* fill: #2196F3; */
     /* outline: none; */
+    outline: none;
 }
-.clients-list .client-button:hover .clients-net,
-.clients-a:focus .clients-net {
-    fill:#2196F3 ;
+.client-button:hover .clients-net,
+.clients-list .clients-a:focus .clients-net {
+    fill:#2196F3 ; 
 }
 
 
