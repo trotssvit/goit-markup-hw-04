@@ -98,7 +98,9 @@ padding-bottom: 25px; */
 
 
 /*-------------------------- footer styles ---------------------*/
-
+.footer-space .container{
+    display: flex;
+}
 .footer-space {
     background-color: var(--footer-bg-color);
     padding-bottom: 60px;
@@ -662,23 +664,31 @@ align-items: center;
     width: 170px;
     height: 92px;
 }
-.clients-a .client-button:hover,
-.clients-list .clients-a:focus
+.clients-a .client-button:hover
+
 {
     border-color:#2196F3;
     cursor: pointer;
-    /* fill: currentColor; */
-    /* fill: #2196F3; */
-    /* outline: none; */
-    outline: none;
+
 }
-.client-button:hover .clients-net,
-.clients-list .clients-a:focus .clients-net {
-    fill:#2196F3 ; 
+.client-button:hover .clients-net {
+    fill: #2196F3;
+
 }
 
+.clients-a:focus .client-button{
+border-color:#2196F3;
 
+}
 
+.clients-a:focus .clients-net{
+    border-color:#2196F3;
+    fill: #2196F3;
+}
+
+ .clients-a .clients-button:focus .clients-net{
+     fill: red;
+ }
 
 /*------------------------- Portfolio page ------------*/
 
@@ -733,7 +743,7 @@ margin-bottom: 50px;
 }
 /* ------------------portfolio content--------------------------------- */
 .profile.list{
-    /* margin: 0; */
+  
     display: flex;
     flex-wrap: wrap;
 }
