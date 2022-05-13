@@ -224,8 +224,10 @@ padding-bottom: 25px; */
     align-items: baseline;
 }
 
-.footer-soc-link:hover{
+.footer-soc-link:hover,
+.footer-soc-link:focus{
     background-color: var(--active-color) ;
+    
 }
 .address-links {
     display: inline-block;
@@ -270,7 +272,7 @@ margin-right: 50px;
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    color: #757575;
+    fill: #757575;
     }
 .tel-icon{
 width: 10PX;
@@ -314,10 +316,13 @@ fill: #757575;
         color: var(--active-color);
     }
 
-.mail:hover .mail-icon {
-fill: var(--active-color);}
+.mail:hover .mail-icon,
+.mail:focus .mail-icon{
+fill: var(--active-color);
+}
 
-.tel:hover .tel-icon {
+.tel:hover .tel-icon,
+.tel:focus .tel-icon {
     fill: var(--active-color);
 }
     /* .mail-icon:hover,
@@ -606,8 +611,8 @@ fill: var(--active-color);}
 background-color: #2196F3;
 
 }
- .team-link-items:hover .team-net,
- .team-link-items:focus .team-net{
+ .team-links:hover .team-net,
+ .team-links:focus .team-net{
 fill: #fff;
     
 }
@@ -616,7 +621,7 @@ fill: #fff;
     margin-left: 10px;
 }
 /* ---------------------------our clients------------------------- */
-.clients{
+.clients-text{
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -626,6 +631,8 @@ justify-content: center;
 align-items: center;
 }
 .clients-net{
+    width: 106px;
+    height: 60px;
     fill: #AFB1B8;
 }      
 
@@ -654,15 +661,17 @@ align-items: center;
     width: 170px;
     height: 92px;
 }
-.client-button:hover,
-.client-button:focus{
+.clients-a .client-button:hover,
+.clients-a .client-button:focus {
     border-color:#2196F3;
     cursor: pointer;
-    fill: currentColor;
+    /* fill: currentColor; */
     fill: #2196F3;
+    /* outline: none; */
 }
-.client-button:hover .clients-net{
-    fill: #2196F3;
+.clients-list .client-button:hover .clients-net,
+.clients-a:focus .clients-net {
+    fill:#2196F3 ;
 }
 
 
